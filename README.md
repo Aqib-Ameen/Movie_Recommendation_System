@@ -149,3 +149,5 @@ model:
 - **Recall@K** — fraction of relevant items that appear in top-K
 - **NDCG@K** — normalized discounted cumulative gain (ranking quality)
 - **Coverage** — % of catalogue the model can recommend
+
+---
