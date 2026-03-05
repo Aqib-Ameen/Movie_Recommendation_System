@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data and Models (Large files)
+models/saved/
+data/processed/
+src/data/raw/
+*.csv
+*.pkl
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing
+.pytest_cache/
+test-results/
+.tox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# GitHub artifacts from this session
+!README.md
+!requirements.txt
+!config.yaml

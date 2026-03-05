@@ -1,0 +1,37 @@
+data:
+  ratings_path: src/data/raw/ratings_for_additional_users.csv
+  items_path: src/data/raw/movies.csv
+  users_path: src/data/raw/users.csv       # optional user metadata
+  processed_dir: data/processed/
+  test_size: 0.2
+  random_state: 42
+
+model:
+  # SVD (Matrix Factorization)
+  svd_factors: 50
+  svd_epochs: 20
+  svd_lr_all: 0.005
+  svd_reg_all: 0.02
+
+  # KNN (Collaborative Filtering)
+  knn_k: 20
+  knn_min_k: 1
+  knn_sim_name: cosine         # cosine | pearson | msd
+
+  # Content-Based
+  tfidf_max_features: 5000
+  tfidf_ngram_range: [1, 2]
+
+  # Hybrid
+  hybrid_alpha: 0.6             # 1.0 = pure CF, 0.0 = pure CB
+  cold_start_threshold: 5       # users with fewer ratings use CB only
+
+api:
+  top_n: 10
+  host: "0.0.0.0"
+  port: 8000
+  model_dir: models/saved/
+
+evaluation:
+  k_values: [5, 10, 20]         # Precision@K, Recall@K, NDCG@K
+  relevance_threshold: 3.5      # min rating to consider an item "relevant"
