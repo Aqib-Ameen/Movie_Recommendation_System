@@ -129,7 +129,7 @@ pytest tests/ -v
 
 ---
 
-## 📊 Data Insights
+## Data Insights
 
 To provide a better understanding of the underlying dataset (4.1M+ ratings), here are some visual insights generated during the training phase.
 
@@ -143,7 +143,7 @@ To provide a better understanding of the underlying dataset (4.1M+ ratings), her
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `config.yaml` to tune hyperparameters:
 
