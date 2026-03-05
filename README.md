@@ -129,7 +129,21 @@ pytest tests/ -v
 
 ---
 
-## Configuration
+## 📊 Data Insights
+
+To provide a better understanding of the underlying dataset (4.1M+ ratings), here are some visual insights generated during the training phase.
+
+### Rating Distribution
+![Rating Distribution](./docs/assets/rating_dist.png)
+*Most users tend to give ratings between 3.0 and 5.0, with 4.0 being the most frequent.*
+
+### Genre Analysis
+![Genre Analysis](./docs/assets/genre_analysis.png)
+*Drama and Comedy are the most prevalent genres in the catalogue, followed by Thriller and Action.*
+
+---
+
+## ⚙️ Configuration
 
 Edit `config.yaml` to tune hyperparameters:
 
